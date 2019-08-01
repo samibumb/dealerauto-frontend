@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {CarComponent} from './car/car.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'cars', component: CarComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
