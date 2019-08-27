@@ -1,0 +1,49 @@
+html,body {
+  background-color: cadetblue;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+
+}
+
+header {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  background-color: #0764ff;
+  vertical-align: top
+}
+
+.photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+button {
+
+  text-align: center;
+  background-color: #969696;
+  font-size: large;
+  font-weight: 900;
+  margin-left: 28em;
+}
+
+.alignButton {
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+html {
+  background: url(../../assets/poze/carBG.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
