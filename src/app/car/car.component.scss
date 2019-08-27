@@ -1,0 +1,90 @@
+header {
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 7px solid black;
+  font-weight: 900;
+}
+
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+table,th,td {
+  border: 1px solid #969696;
+  font-size: 20px;
+  padding: 5px;
+  color: burlywood;
+  background-color: #000000;
+
+}
+
+th {
+  color: #cb7e00;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: left;
+  border-bottom: 3px solid #000000;
+  font-size: 25px;
+
+}
+b {
+  horiz-align: center;
+}
+.photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+h4 {
+  font-size: 20px;
+  text-align: left;
+  padding-left: 15px;
+}
+#year {
+  padding-left: 10px;
+}
+
+img {
+  text-align: center;
+}
+button {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  border: 1px solid #000000;
+  background-color: burlywood;
+  margin-left: 6em;
+}
+body {
+  margin: 0px;
+  background-color: cadetblue;
+}
+#hero {
+  background-image: url('/src/assets/poze/carBG.png');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: -10;
+}
+
+.inputData label input{
+  margin-left: 7em;
+  width: 250px;
+}
+
+.inputData {
+  font-weight: 900;
+  font-size: large;
+}
+

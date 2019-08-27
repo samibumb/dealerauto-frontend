@@ -1,11 +1,20 @@
 
-<table style="width:100%">
+<body>
+<a routerLink=""> Back to Homepage</a>
+<header>Premium Cars</header>
+
+
+<b><img src="../../assets/poze/cars.png" width="500" height="150" class="photo"></b>
+  <h1>Available cars</h1>
+
+<table style="width:90%">
   <tr>
-    <th>id</th>
-    <th>brand</th>
-    <th>model</th>
-    <th>year</th>
-    <th>price</th>
+    <th>ID</th>
+    <th>BRAND</th>
+    <th>MODEL</th>
+    <th>YEAR</th>
+    <th>PRICE(€)</th>
+    <th></th>
   </tr>
   <tr *ngFor="let car of this.cars">
     <td>{{car.id}}</td>
@@ -13,15 +22,33 @@
     <td>{{car.model}}</td>
     <td>{{car.year}}</td>
     <td>{{car.price}}</td>
+    <td (click)="deleteCar(car.id)"><a>BUY</a></td>
+
   </tr>
 </table>
 <br>
-Brand: <input [(ngModel)]="this.car.brand" type="text" name="brand">
-<br>
-Model: <input [(ngModel)]="car.model" type="text" name="model">
-<br>
-Year: <input [(ngModel)]="car.year" type="text" name="year">
-<br>
-Price: <input [(ngModel)]="car.price" type="text" name="price">
-<br>
-<button (click)="addCar()">Add</button>
+
+<h3>CREATE CAR</h3>
+<div class="inputData">
+Brand: <label>
+  <input [(ngModel)]="this.car.brand" type="text" name="brand">
+</label>
+  <br>
+Model: <label>
+  <input [(ngModel)]="car.model" type="text" name="model">
+</label>
+  <br>
+Year: <label>
+  <input [(ngModel)]="car.year" type="text" name="year">
+</label>
+  <br>
+Price: <label>
+  <input [(ngModel)]="car.price" type="text" name="price">
+</label>
+  <br>
+  <br>
+</div>
+<button (click)="addCar()">CREATE</button>
+
+
+</body>
