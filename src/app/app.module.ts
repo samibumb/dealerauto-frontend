@@ -9,12 +9,14 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarComponent,
-    HomePageComponent
+    HomePageComponent,
+    AboutmeComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,7 @@ import { HomePageComponent } from './home-page/home-page.component';
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([{path: '', component:  HomePageComponent},
-      {path: 'cars', component: CarComponent}])
+      {path: 'cars', component: CarComponent} , {path: 'aboutme', component: AboutmeComponent}])
   ],
   providers: [CarService],
   bootstrap: [AppComponent]
