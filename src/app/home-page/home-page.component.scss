@@ -38,6 +38,14 @@ button {
   transform: translateY(-50%);
 }
 
+.alignButton1 {
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 html {
   background: url(../../assets/poze/carBG.png) no-repeat center center fixed;
   -webkit-background-size: cover;
